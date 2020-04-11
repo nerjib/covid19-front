@@ -47,7 +47,7 @@ constructor(props){
 render (){
     return (
         <div>
-            <div className='col-md-4' style={{backgroundColor:'#0ab3c4'}}>
+            <div className='col-md-4'>
                 <table className='table table-borderless'>
                     <thead>
                         <tr>
@@ -105,7 +105,7 @@ render (){
                         <tr>
                             <td></td>
                             <td colSpan='2'  style={{alignItems:'center', marginLeft:50}}>
-                            <button class='btn btn-default btn-primary' data-goestimate='estimate'  onClick={this.estimate}>Estimate</button>
+                            <button class='btn btn-default btn-info' data-goestimate='estimate'  onClick={this.estimate}>Estimate</button>
 
                             </td>
                         </tr>

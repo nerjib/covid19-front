@@ -52,14 +52,14 @@ render (){
                     <thead>
                         <tr>
                             <th colSpan='2'>
-                                <label className='text-left'>    Data Collection</label>
+                                   Data Collection
                             </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td >
-                            <label className='text-left'> Population </label>
+                            <label className='text-left'  for='population'> Population </label>
                             </td>
                             <td>
                                 <input className='form-control' value={this.state.population} data-population='population' onChange={this.handleChange} name='population' type='text' placeholder='Population'/>    
@@ -67,7 +67,7 @@ render (){
                         </tr>
                         <tr>
                             <td style={{alignItems:'left'}}>
-                            <label className='text-left'>   Time to Elapse </label>
+                            <label className='text-left' for='timeToElapse'>   Time to Elapse </label>
                             </td>
                             <td>
                                 <input type='text' className='form-control' value={this.state.timeToElapse} data-time-to-elapse='timeToElapse' onChange={this.handleChange} name='timeToElapse' placeholder='Time to Elapse'/>    
@@ -75,7 +75,7 @@ render (){
                         </tr>
                         <tr>
                             <td>
-                            <label className='text-left'>   Reported Case </label>
+                            <label className='text-left' for='reportedCases'>   Reported Case </label>
                             </td>
                             <td>
                                 <input type='text' className='form-control' value={this.state.reportedCases} data-reported-cases='reportedCases' onChange={this.handleChange} name='reportedCases' placeholder='Reported Cases'/>    
@@ -83,7 +83,7 @@ render (){
                         </tr>
                         <tr>
                             <td>
-                            <label className='text-left'>   Total Hospital </label>
+                            <label className='text-left' for='totalHospitalBeds'>   Total Hospital </label>
                             </td>
                             <td>
                                 <input type='text' className='form-control' value={this.state.totalHospitalBeds} data-total-hospital-beds='totalHospitalBeds' onChange={this.handleChange} name='totalHospitalBeds' placeholder='Total Hospital Beds'/>    
@@ -91,7 +91,7 @@ render (){
                         </tr>
                         <tr>
                             <td>
-                            <label className='text-left'>  Period Type </label>
+                            <label className='text-left' for='periodType'>  Period Type </label>
                             </td>
                             <td>
                                 <select className='form-control'   data-period-type='periodType' name='periodType' onChange={this.handleChange}>
@@ -124,7 +124,7 @@ render (){
                         <tbody>
                             <tr>
                                 <td>
-                                <label className='text-left'> Currently Infected </label>
+                                 Currently Infected 
                                 </td>
                                 <td>
                                     {this.state.impactResult.currentlyInfected}
@@ -137,7 +137,7 @@ render (){
                             </tr>
                             <tr>
                                 <td>
-                                <label className='text-left'>   Infections At </label>
+                                   Infections At 
                                 </td>
                                 <td>
                                 {this.state.impactResult.infectionsByRequestedTime}
@@ -149,7 +149,7 @@ render (){
                             </tr>
                             <tr>
                                 <td>
-                                <label className='text-left'>   Severe Cases </label>
+                                   Severe Cases 
                                 </td>
                                 <td>
                                     {this.state.impactResult.severeCasesByRequestedTime}
@@ -160,7 +160,7 @@ render (){
                             </tr>
                             <tr>
                                 <td>
-                                <label className='text-left'>   Hospital Beds </label>
+                                   Hospital Beds
                                 </td>
                                 <td>
                                     {this.state.impactResult.hospitalBedsByRequestedTime}
@@ -171,7 +171,7 @@ render (){
                             </tr>
                             <tr>
                                 <td>
-                                <label className='text-left'> Cases For ICU </label>
+                                 Cases For ICU 
                                 </td>
                                 <td>
                                     {this.state.impactResult.casesForICUByRequestedTime}
@@ -182,7 +182,7 @@ render (){
                             </tr>
                             <tr>
                                 <td>
-                                <label className='text-left'> Cases For Ventilators </label>
+                                 Cases For Ventilators 
                                 </td>
                                 <td>
                                     {this.state.impactResult.casesForVentilatorsByRequestedTime}
@@ -193,7 +193,7 @@ render (){
                             </tr>
                             <tr>
                                 <td>
-                                <label className='text-left'> Dollars In Flight </label>
+                                 Dollars In Flight 
                                 </td>
                                 <td>
                                     {this.state.impactResult.dollarsInFlight}
